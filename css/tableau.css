@@ -1,0 +1,20 @@
+#a a {
+	color: #000;
+	text-decoration: none;
+	display: block;
+	width: 190px;
+	padding-top: 10px;
+	padding-right: 5px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	float: left;
+	margin-left: 50px;
+	border: 1px solid #000;
+	text-align: center;
+}
+#lien_a {
+	background-image: url(../images/tableau/lien1.png);
+	background-repeat: repeat-x;
+	height: 180px;
+	margin-top: -20px;
+}

@@ -1,0 +1,133 @@
+form.universal
+{
+	-moz-border-radius: .4em;
+	-webkit-border-radius: .4em;
+	border-radius: .4em;
+	background-color: #fff;
+	font-family: Arial, sans-serif;
+}
+
+form.universal * {
+	margin: 0;
+	padding: 0;
+}
+
+form.universal p {
+	clear: both;
+	margin: 0.5em 0;
+}
+
+form.universal input[type=text],
+form.universal input[type=password],
+form.universal textarea,
+form.universal select
+{
+	-moz-background-clip: border;
+	-moz-background-inline-policy: continuous;
+	-moz-background-origin: padding;
+	-moz-border-radius: .4em;
+	background: #bbf none repeat scroll 0 0;
+	border: 1px solid #ddd;
+	color: #666;
+	font-size: 1em;
+	padding: .15em;
+}
+
+form.universal input:focus,
+form.universal textarea:focus,
+form.universal select:focus
+{
+	-moz-background-clip: border;
+	-moz-background-inline-policy: continuous;
+	-moz-background-origin: padding;
+	background: #eee none repeat scroll 0 0;
+}
+
+form.universal fieldset
+{
+	-moz-background-clip: border;
+	-moz-background-inline-policy: continuous;
+	-moz-background-origin: padding;
+	-moz-border-radius: 0.6em;
+	background: #ccc none repeat scroll 0 0;
+	border: 2px solid #aaa;
+	font-size: 12px;
+	margin: 1em 0;
+	padding-left: 10px;
+}
+
+form.universal fieldset legend
+{
+	-moz-border-radius: .2em;
+	background-color: #eee;
+	border: 2px solid #fff;
+	color: #f90;
+	font-size: 1em;
+	margin-left: 1em;
+	padding: 0 5px;
+}
+
+form.universal label
+{
+	-moz-background-clip: border;
+	-moz-background-inline-policy: continuous;
+	-moz-background-origin: padding;
+	background: #ccc none repeat scroll 0 0;
+	display: block;
+	float: left;
+	margin: .3em 1em .3em 0;
+	text-align: left;
+	width: 10em;
+}
+
+form.universal label[for]
+{
+	text-align: right;
+}
+
+form.universal fieldset:first-child {
+	margin-top: 0;
+}
+
+form.universal input[type=button],
+form.universal input[type=reset],
+form.universal input[type=submit]
+{
+	-moz-border-radius: .4em;
+	background-color: #036;
+	border: 1px solid #aaa;
+	color: #fff;
+	font-size: .85em;
+	margin: 0 .3em;
+	padding: .15em .4em;
+}
+
+form.universal input[type=button]:hover,
+form.universal input[type=reset]:hover,
+form.universal input[type=submit]:hover
+{
+	background-color: #ccc;
+	border: 1px solid #aaa;
+	color: #000;
+	cursor: pointer;
+}
+
+form.universal input[type=button]:focus,
+form.universal input[type=reset]:hover,
+form.universal input[type=submit]:focus
+{
+	background-color: #ccc;
+	border: 1px solid #aaa;
+	color: #000;
+	cursor: pointer;
+}
+
+form.universal ol
+{
+	list-style: none;
+}
+
+form.universal ol li
+{
+	margin: 5px 0;
+}
