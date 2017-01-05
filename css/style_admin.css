@@ -8,6 +8,12 @@
 	font-style: italic;
 	font-size: 20px;
 }
+.content h3 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #090;
+	text-align: center;
+}
+
 .content p {
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -43,4 +49,7 @@
 	border: 1px solid #000;
 	margin-bottom: 10px;
 	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.content table   {
+	font-size: 12px;
 }

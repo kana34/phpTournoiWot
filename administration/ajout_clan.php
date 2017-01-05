@@ -75,9 +75,9 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "insert_clan")) {
     <ul class="nav">
       <li><a href="ajout_clan.php">Ajouter un clan</a></li>
       <li><a href="liste_clan.php">Liste des clans</a></li>
-      <li><a href="#">Aujouter un tournoi</a></li>
-      <li><a href="#">Liste des tournois</a></li>
-      <li><a href="#">Lien quatre</a></li>
+      <li><a href="ajout_tournoi.php">Ajouter un tournoi</a></li>
+      <li><a href="liste_tournois.php">Liste des tournois</a></li>
+      <li><a href="#">Banlist</a></li>
     </ul>
     <p>&nbsp;</p>
     <!-- end .sidebar1 --></div>

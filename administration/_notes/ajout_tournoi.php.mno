@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_clan" value="name:id;datatype:int,name:nom;datatype:string,name:id_clan;datatype:string" />
+	<infoitem key="UD_id_clan2" value="name:id;datatype:int,name:nom;datatype:string,name:id_clan;datatype:string" />
+	<infoitem key="UD_id_clan3" value="name:id;datatype:int,name:nom;datatype:string,name:id_clan;datatype:string" />
+	<infoitem key="UD_id_clan4" value="name:id;datatype:int,name:nom;datatype:string,name:id_clan;datatype:string" />
+	<infoitem key="UD_id_clan5" value="name:id;datatype:int,name:nom;datatype:string,name:id_clan;datatype:string" />
+	<infoitem key="UD_clan2" value="name:id;datatype:int,name:nom;datatype:string,name:id_clan;datatype:string" />
+	<infoitem key="UD_clan3" value="name:id;datatype:int,name:nom;datatype:string,name:id_clan;datatype:string" />
+	<infoitem key="UD_clan4" value="name:id;datatype:int,name:nom;datatype:string,name:id_clan;datatype:string" />
+	<infoitem key="UD_clan5" value="name:id;datatype:int,name:nom;datatype:string,name:id_clan;datatype:string" />
+</info>

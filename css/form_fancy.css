@@ -1,0 +1,184 @@
+form.fancy
+{
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	margin: 1em;
+	padding: 1em;
+	background: #fafafa url(shadow.png) top repeat-x;
+	border: 1px solid;
+	border-color: #999 #ccc #eee #ccc;
+	color: #666;
+}
+
+form.fancy *
+{
+	margin: 0;
+	padding: 0;
+}
+
+form.fancy p
+{
+	margin: .5em 0;
+}
+
+form.fancy fieldset
+{
+	display: block;
+	position: relative;
+	background-color: #eee;
+	border: 1px solid;
+	border-color: #fff #ccc #999 #ccc;
+	margin: 0 0 35px 0;
+	padding: 0 1em 1em 1em;
+	top: 25px;
+}
+
+form.fancy legend
+{
+	display: block;
+	position: absolute;
+	margin-left: 5px;
+	margin-top: -25px;
+	height: 14px;
+	background-color: #eee;
+	border: 1px solid;
+	border-color: #fff #ccc #eee #ccc;
+	padding: 5px 10px;
+	color: #444;
+	font-size: 13px;
+	font-weight: bold;
+	-moz-border-radius-topright: 1em;
+	-webkit-border-top-right-radius: 1em;
+	border-top-right-radius: 1em;
+	text-shadow: 0.1em 0.1em #fff
+}
+
+form.fancy input[type=text],
+form.fancy input[type=password],
+form.fancy textarea,
+form.fancy select
+{
+	background: #fff url(shadow.png) top repeat-x;
+	border: 1px solid;
+	border-color: #999 #ccc #eee #ccc;
+	color: #666;
+	font-size: 1em;
+	padding: .2em;
+	-moz-border-radius-topright: .8em;
+	-moz-border-radius-bottomleft: .8em;
+	-webkit-border-top-right-radius: .8em;
+	-webkit-border-bottom-left-radius: .8em;
+	border-top-right-radius: .8em;
+	border-bottom-left-radius: .8em;
+}
+
+form.fancy input[type=text]:focus,
+form.fancy input[type=password]:focus,
+form.fancy textarea:focus,
+form.fancy select:focus
+{
+	background-color: #ffe;
+	color: #000;
+}
+
+form.fancy select
+{
+	padding-top: 5px;
+}
+
+form.fancy select[multiple]
+{
+	-moz-border-radius-topright: 0;
+	-webkit-border-top-right-radius: 0;
+	border-top-right-radius: 0;
+}
+
+form.fancy input[type=submit],
+form.fancy input[type=reset],
+form.fancy input[type=button],
+form.fancy button
+{
+	background: #ddd;
+	border: 1px solid;
+	border-color: #eee #ccc #999 #ccc;
+	color: #555;
+	padding: 5px;
+	-moz-border-radius-topright: .8em;
+	-moz-border-radius-bottomleft: .8em;
+	-webkit-border-top-right-radius: .8em;
+	-webkit-border-bottom-left-radius: .8em;
+	border-top-right-radius: .8em;
+	border-bottom-left-radius: .8em;
+}
+
+form.fancy input[type=submit]:hover,
+form.fancy input[type=reset]:hover,
+form.fancy input[type=button]:hover,
+form.fancy button:hover
+{
+	background: #ffe;
+	color: #000;
+}
+
+form.fancy p
+{
+	margin: .5em 0;
+}
+
+form.fancy label[for]
+{
+	font-size: 1.1em;
+	font-style: italic;
+	color: #000;
+}
+
+form.fancy ol
+{
+	list-style: none;
+}
+
+form.fancy ol li
+{
+	margin: 5px 0;
+}
+
+form.fancy ol li label
+{
+	display: block;
+}
+
+form.fancy ol.table
+{
+	list-style: none;
+	display: table;
+}
+
+form.fancy ol.table li
+{
+	display: table-row;
+}
+
+form.fancy ol.table li label[for]
+{
+	display: table-cell;
+	text-align: right;
+	padding: 10px;
+}
+
+form.fancy div.col2 label
+{
+	float: left;
+	width: 50%;
+}
+
+form.fancy div.col3 label
+{
+	float: left;
+	width: 33%;
+}
+
+form.fancy div.col4 label
+{
+	float: left;
+	width: 25%;
+}

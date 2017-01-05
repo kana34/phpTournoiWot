@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_liste_joueurs" value="name:id;datatype:int,name:pseudo;datatype:string,name:clan;datatype:string,name:tournoi;datatype:string,name:lettre;datatype:string,name:chiffre;datatype:int" />
+</info>

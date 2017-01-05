@@ -1,5 +1,4 @@
-<link href="../css/tableau.css" rel="stylesheet" type="text/css">
-<?php require_once('../Connections/tournoi.php'); ?>
+<?php require_once('../../Connections/tournoi.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
@@ -32,17 +31,18 @@ function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDe
 }
 }
 
-$colname_joueur = "-1";
-if (isset($_GET['id'])) {
-  $colname_joueur = $_GET['id'];
+if ((isset($_GET['id'])) && ($_GET['id'] != "")) {
+  $deleteSQL = sprintf("DELETE FROM tournois WHERE id=%s",
+                       GetSQLValueString($_GET['id'], "int"));
+
+  mysql_select_db($database_tournoi, $tournoi);
+  $Result1 = mysql_query($deleteSQL, $tournoi) or die(mysql_error());
+
+  $deleteGoTo = "../accueil.php?action=supp_tournoi";
+  if (isset($_SERVER['QUERY_STRING'])) {
+    $deleteGoTo .= (strpos($deleteGoTo, '?')) ? "&" : "?";
+    $deleteGoTo .= $_SERVER['QUERY_STRING'];
+  }
+  header(sprintf("Location: %s", $deleteGoTo));
 }
-mysql_select_db($database_tournoi, $tournoi);
-$query_joueur = sprintf("SELECT * FROM inscription WHERE tournoi = %s", GetSQLValueString($colname_joueur, "text"));
-$joueur = mysql_query($query_joueur, $tournoi) or die(mysql_error());
-$row_joueur = mysql_fetch_assoc($joueur);
-$totalRows_joueur = mysql_num_rows($joueur);
-
-
-
-mysql_free_result($joueur);
 ?>

@@ -1,20 +1,88 @@
+#marge {
+	background-color: #CCC;
+	height: 25px;
+	width: 15px;
+	float: left;
+}
+#a {
+	float: left;
+}
 #a a {
 	color: #000;
 	text-decoration: none;
 	display: block;
-	width: 190px;
+	width: 108px;
 	padding-top: 10px;
 	padding-right: 5px;
 	padding-bottom: 10px;
 	padding-left: 5px;
 	float: left;
-	margin-left: 50px;
 	border: 1px solid #000;
 	text-align: center;
+	margin-right: 30px;
+	margin-bottom: 0px;
+	font-size: 12px;
 }
 #lien_a {
 	background-image: url(../images/tableau/lien1.png);
 	background-repeat: repeat-x;
-	height: 180px;
-	margin-top: -20px;
+	height: 150px;
+	margin-top: -13px;
+	margin-bottom: 0px;
+}
+#b a {
+	width: 108px;
+	margin-left: 90px;
+	margin-right: 90px;
+	padding-top: 10px;
+	padding-right: 5px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	border: 1px solid #000;
+	display: block;
+	float: left;
+	text-align: center;
+	font-size: 12px;
+}
+#lien_b {
+	background-image: url(../images/tableau/lien2.png);
+	background-repeat: repeat-x;
+	height: 150px;
+	margin-top: -13px;
+	margin-bottom: 0px;
+}
+#c a {
+	width: 108px;
+	margin-left: 240px;
+	margin-right: 240px;
+	padding-top: 10px;
+	padding-right: 5px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	border: 1px solid #000;
+	display: block;
+	float: left;
+	text-align: center;
+	font-size: 12px;
+}
+#lien_c {
+	background-image: url(../images/tableau/lien3.png);
+	background-repeat: repeat-x;
+	height: 150px;
+	margin-top: -13px;
+	margin-bottom: 0px;
+}
+#d a {
+	width: 108px;
+	margin-left: 540px;
+	margin-right: 540px;
+	padding-top: 10px;
+	padding-right: 5px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	border: 1px solid #000;
+	display: block;
+	float: left;
+	text-align: center;
+	font-size: 12px;
 }

@@ -85,6 +85,8 @@ while ($nombre_equipe <= $row_info_tournoi['nbr_equipe'])
 		
 		$nombre_equipe = $row_info_tournoi['nbr_equipe'] + 1;
 		
+		mysql_free_result($nbr_joueur_equipe);
+		
 		$updateGoTo = "../mise_en_place_joueur.php";
 		if (isset($_SERVER['QUERY_STRING'])) {
 		$updateGoTo .= (strpos($updateGoTo, '?')) ? "&" : "?";
@@ -98,6 +100,6 @@ while ($nombre_equipe <= $row_info_tournoi['nbr_equipe'])
 }
 
 mysql_free_result($info_tournoi);
-mysql_free_result($nbr_joueur_equipe);
+
 mysql_free_result($joueur);
 ?>

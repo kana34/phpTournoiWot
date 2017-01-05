@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_info_tournoi" value="name:id;datatype:int,name:nom;datatype:string,name:description;datatype:blob,name:nbr_joueur;datatype:string,name:nbr_equipe;datatype:string,name:mixed;datatype:string,name:date_event;datatype:string,name:heure_event;datatype:string,name:open;datatype:string,name:id_clan1;datatype:string,name:id_clan2;datatype:string,name:id_clan3;datatype:string,name:date;datatype:string,name:createur;datatype:string" />
+	<infoitem key="UD_joueurs" value="name:id;datatype:int,name:pseudo;datatype:string,name:clan;datatype:string,name:tournoi;datatype:string,name:lettre;datatype:string,name:chiffre;datatype:int" />
+	<infoitem key="UD_equipe" value="name:id;datatype:int,name:pseudo;datatype:string,name:clan;datatype:string,name:tournoi;datatype:string,name:lettre;datatype:string,name:chiffre;datatype:int" />
+</info>

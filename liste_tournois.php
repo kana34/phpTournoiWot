@@ -68,7 +68,7 @@ function MM_goToURL() { //v3.0
         <td align="center">Date du tournoi</td>
     </tr>
     <?php do { ?>
-      <tr onclick="MM_goToURL('parent','#');return document.MM_returnValue" id="tb">
+      <tr onclick="MM_goToURL('parent','inscription.php?id=<?php echo $row_tournois['id']; ?>');return document.MM_returnValue" id="tb">
         <td align="center"><?php echo $row_tournois['nom']; ?></td>
         <td><?php echo $row_tournois['description']; ?></td>
         <td align="center"><?php echo $row_tournois['nbr_joueur']; ?></td>

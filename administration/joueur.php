@@ -31,18 +31,22 @@ function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDe
 }
 }
 
+$colname_liste_joueurs = "-1";
+if (isset($_GET['id'])) {
+  $colname_liste_joueurs = $_GET['id'];
+}
 mysql_select_db($database_tournoi, $tournoi);
-$query_liste_clan = "SELECT * FROM clan ORDER BY nom ASC";
-$liste_clan = mysql_query($query_liste_clan, $tournoi) or die(mysql_error());
-$row_liste_clan = mysql_fetch_assoc($liste_clan);
-$totalRows_liste_clan = mysql_num_rows($liste_clan);
+$query_liste_joueurs = sprintf("SELECT * FROM inscription WHERE tournoi = %s ORDER BY pseudo ASC", GetSQLValueString($colname_liste_joueurs, "text"));
+$liste_joueurs = mysql_query($query_liste_joueurs, $tournoi) or die(mysql_error());
+$row_liste_joueurs = mysql_fetch_assoc($liste_joueurs);
+$totalRows_liste_joueurs = mysql_num_rows($liste_joueurs);
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/page_administration.dwt.php" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>Liste des clans</title>
+<title>Joueur</title>
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" -->
 <script type="text/javascript">
@@ -71,23 +75,24 @@ function GP_popupConfirmMsg(msg) { //v1.0
     <p>&nbsp;</p>
     <!-- end .sidebar1 --></div>
   <div class="content">
-    <h1><!-- InstanceBeginEditable name="Titre_page" -->Liste des clans<!-- InstanceEndEditable --></h1>
+    <h1><!-- InstanceBeginEditable name="Titre_page" -->Joueur du tournoi<!-- InstanceEndEditable --></h1>
     <!-- InstanceBeginEditable name="Contenu_page" -->
     <table border="1" align="center" width="300px">
       <tr>
-        <td align="center">Nom du clan</td>
-        <td align="center">Id du clan</td>
-        <td align="center">Supp.</td>
+        <td align="center">Pseudo</td>
+        <td align="center">Clan</td>
+        <td align="center">Supp</td>
       </tr>
       <?php do { ?>
         <tr>
-          <td align="center"><?php echo $row_liste_clan['nom']; ?></td>
-          <td align="center"><?php echo $row_liste_clan['id_clan']; ?></td>
-          <td align="center"><a href="scripts/supprimer_clan.php?id=<?php echo $row_liste_clan['id']; ?>" onclick="GP_popupConfirmMsg('Etes vous su de vouloir supprimer ce clan ?');return document.MM_returnValue"><img src="../images/supprimer.jpg" width="40" height="40" alt="supprimer" /></a></td>
+          <td><?php echo $row_liste_joueurs['pseudo']; ?></td>
+          <td><?php echo $row_liste_joueurs['clan']; ?></td>
+          <td align="center"><a href="scripts/supprimer_joueur.php?idjoueur=<?php echo $row_liste_joueurs['id']; ?>&id=<?php echo $_GET['id']; ?>"><img src="../images/supprimer.jpg" alt="supprimer" width="30" height="30" onclick="GP_popupConfirmMsg('Voulez vous supprimer ce joueur ?');return document.MM_returnValue" /></a></td>
         </tr>
-        <?php } while ($row_liste_clan = mysql_fetch_assoc($liste_clan)); ?>
+        <?php } while ($row_liste_joueurs = mysql_fetch_assoc($liste_joueurs)); ?>
     </table>
-    <!-- InstanceEndEditable --><!-- end .content --></div>
+    <!-- InstanceEndEditable -->
+    <!-- end .content --></div>
   <div class="footer">
     <p>supprimer.</p>
     <!-- end .footer --></div>
@@ -95,5 +100,5 @@ function GP_popupConfirmMsg(msg) { //v1.0
 </body>
 <!-- InstanceEnd --></html>
 <?php
-mysql_free_result($liste_clan);
+mysql_free_result($liste_joueurs);
 ?>

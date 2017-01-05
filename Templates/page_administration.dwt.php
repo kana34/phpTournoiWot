@@ -20,9 +20,9 @@
     <ul class="nav">
       <li><a href="../administration/ajout_clan.php">Ajouter un clan</a></li>
       <li><a href="../administration/liste_clan.php">Liste des clans</a></li>
-      <li><a href="#">Aujouter un tournoi</a></li>
-      <li><a href="#">Liste des tournois</a></li>
-      <li><a href="#">Lien quatre</a></li>
+      <li><a href="../administration/ajout_tournoi.php">Ajouter un tournoi</a></li>
+      <li><a href="../administration/liste_tournois.php">Liste des tournois</a></li>
+      <li><a href="#">Banlist</a></li>
     </ul>
     <p>&nbsp;</p>
     <!-- end .sidebar1 --></div>
